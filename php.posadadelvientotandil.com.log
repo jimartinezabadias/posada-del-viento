@@ -1,0 +1,40 @@
+[21-Mar-2021 21:10:14] NOTICE: using inherited socket fd=3, "/run/php.29846.sock"
+[21-Mar-2021 21:10:14] NOTICE: fpm is running, pid 104547
+[21-Mar-2021 21:10:14] NOTICE: ready to handle connections
+[21-Mar-2021 21:11:34] NOTICE: Terminating ...
+[21-Mar-2021 21:11:34] NOTICE: exiting, bye-bye!
+[21-Mar-2021 21:24:15] NOTICE: using inherited socket fd=3, "/run/php.29846.sock"
+[21-Mar-2021 21:24:15] NOTICE: fpm is running, pid 111455
+[21-Mar-2021 21:24:15] NOTICE: ready to handle connections
+[21-Mar-2021 21:25:27] NOTICE: Terminating ...
+[21-Mar-2021 21:25:27] NOTICE: exiting, bye-bye!
+[22-Mar-2021 11:54:28] NOTICE: using inherited socket fd=3, "/run/php.29846.sock"
+[22-Mar-2021 11:54:28] NOTICE: fpm is running, pid 398454
+[22-Mar-2021 11:54:28] NOTICE: ready to handle connections
+[22-Mar-2021 11:56:03] NOTICE: Terminating ...
+[22-Mar-2021 11:56:03] NOTICE: exiting, bye-bye!
+[24-Mar-2021 00:04:50] NOTICE: using inherited socket fd=3, "/run/php.29846.sock"
+[24-Mar-2021 00:04:50] NOTICE: fpm is running, pid 1511735
+[24-Mar-2021 00:04:50] NOTICE: ready to handle connections
+[24-Mar-2021 00:06:49] NOTICE: Terminating ...
+[24-Mar-2021 00:06:49] NOTICE: exiting, bye-bye!
+[24-Mar-2021 00:56:52] NOTICE: using inherited socket fd=3, "/run/php.29846.sock"
+[24-Mar-2021 00:56:52] NOTICE: fpm is running, pid 1539613
+[24-Mar-2021 00:56:52] NOTICE: ready to handle connections
+[24-Mar-2021 00:58:26] NOTICE: Terminating ...
+[24-Mar-2021 00:58:26] NOTICE: exiting, bye-bye!
+[24-Mar-2021 15:23:24] NOTICE: using inherited socket fd=3, "/run/php.29846.sock"
+[24-Mar-2021 15:23:24] NOTICE: fpm is running, pid 2022593
+[24-Mar-2021 15:23:24] NOTICE: ready to handle connections
+[24-Mar-2021 15:25:03] NOTICE: Terminating ...
+[24-Mar-2021 15:25:03] NOTICE: exiting, bye-bye!
+[27-Mar-2021 05:59:08] NOTICE: using inherited socket fd=3, "/run/php.29846.sock"
+[27-Mar-2021 05:59:08] NOTICE: fpm is running, pid 371310
+[27-Mar-2021 05:59:08] NOTICE: ready to handle connections
+[27-Mar-2021 06:01:06] NOTICE: Terminating ...
+[27-Mar-2021 06:01:06] NOTICE: exiting, bye-bye!
+[27-Mar-2021 09:25:47] NOTICE: using inherited socket fd=3, "/run/php.29846.sock"
+[27-Mar-2021 09:25:47] NOTICE: fpm is running, pid 444996
+[27-Mar-2021 09:25:47] NOTICE: ready to handle connections
+[27-Mar-2021 09:27:17] NOTICE: Terminating ...
+[27-Mar-2021 09:27:17] NOTICE: exiting, bye-bye!
