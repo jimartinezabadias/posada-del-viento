@@ -65,7 +65,7 @@ h6 {
   font-weight: 400; }
 
 p {
-  color: #7d7d7d;
+  color: #000000;
   font-size: 14px;
   line-height: 2.1;
   font-weight: 400; }
@@ -349,7 +349,7 @@ img {
   border-radius: 0;
   bottom: 50px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
-  color: rgba(255, 255, 255, 0.63);
+  color: rgb(255, 255, 255);
   font-size: 24px;
   height: 40px;
   line-height: 40px;
@@ -361,43 +361,47 @@ img {
   #scrollUp:hover, #scrollUp:focus {
     background-color: #000000; }
 
+    #btn-reservar {
+      border: none !important;
+    }
+
 /* :: 3.8.0 Palatin Button */
 .palatin-btn {
-  background-color: rgba(255, 255, 255, 0.63);
+  background-color: rgba(0, 126, 23, 0.816);
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   position: relative;
   z-index: 1;
   display: inline-block;
   min-width: 123px;
-  height: 53px;
-  color: #000000;
+  height: 50px; 
+  color: #ffffff;
   border: none;
   border-radius: 0;
-  padding: 0 30px;
+  padding: 0 0px;
   font-size: 16px;
-  line-height: 53px;
+  line-height: 35px;
   text-transform: capitalize; }
   .palatin-btn:hover, .palatin-btn:focus {
     font-size: 16px;
-    background-color: #363636;
+    background-color: #018b0397;
     color: #000000; }
   .palatin-btn.btn-2 {
-    background-color: #363636;
+    background-color: #007f08b3;
     color: #000000; }
     .palatin-btn.btn-2:hover, .palatin-btn.btn-2:focus {
       font-size: 16px;
-      background-color: rgba(255, 255, 255, 0.63);
-      color: #000000; }
+      background-color: rgba(0, 128, 17, 0.762);
+      color: #ffffff; }
   .palatin-btn.btn-3 {
-    background-color: rgba(255, 255, 255, 0.63);
-    color: #260;
-    border: 2px solid #260;
+    background-color: rgba(255, 255, 255, 0.251);
+    color: rgba(59, 112, 33, 0.853);
+    border: 2px solid rgba(34, 102, 0, 0);
     height: 49px;
     line-height: 48px; }
     .palatin-btn.btn-3:hover, .palatin-btn.btn-3:focus {
       font-size: 16px;
-      background-color: rgba(255, 255, 255, 0.63);
+      background-color: rgba(5, 97, 0, 0.744);
       color: #000000; }
 
 /* :: 4.0 Header Area CSS */
@@ -419,7 +423,7 @@ img {
     position: relative;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.63);
-    border-bottom: 2px solid rgba(0, 0, 32, 0.63); }
+    border-bottom: 2px solid rgba(0, 129, 24, 0.63); }
     .header-area .palatin-main-menu .classy-nav-container {
       background-color: transparent; }
     .header-area .palatin-main-menu .classy-navbar {
@@ -479,18 +483,18 @@ img {
         @media only screen and (min-width: 768px) and (max-width: 991px) {
           .header-area .palatin-main-menu .classy-navbar .menu-btn {
             margin-left: 30px;
-            border: 2px solid #260;
+            border: 2px solid rgba(34, 102, 0, 0.713);
             margin-top: 30px;
             display: inline-block; } }
         @media only screen and (max-width: 767px) {
           .header-area .palatin-main-menu .classy-navbar .menu-btn {
             margin-left: 30px;
-            border: 2px solid #260;
+            border: 2px solid rgba(34, 102, 0, 0);
             margin-top: 30px;
             display: inline-block; } }
         .header-area .palatin-main-menu .classy-navbar .menu-btn a {
-          color: rgba(255, 255, 255, 0.63);
-          font-size: 16px; }
+          color: rgba(255, 255, 255, 0.84);
+          font-size: 17px; }
   .header-area .is-sticky .palatin-main-menu {
     position: fixed;
     width: 100%;
@@ -520,7 +524,7 @@ img {
     padding: 0; } }
 
 .classycloseIcon .cross-wrap span {
-  background: #ffffff; }
+  background: #00000080; }
 
 /* :: 5.0 Hero Area CSS */
 .hero-slides {
@@ -558,7 +562,7 @@ img {
       .hero-slides .owl-dots .owl-dot.active, .hero-slides .owl-dots .owl-dot:hover, .hero-slides .owl-dots .owl-dot:focus {
         color: #ffffff;
         background-color: #1b3f4c;
-        border: 2px solid #260;
+        border: 2px solid rgba(34, 102, 0, 0);
         box-shadow: none; }
 
 .single-hero-slide {
@@ -1732,7 +1736,7 @@ img {
       color: #ffffff;
       margin-bottom: 0;
       padding: 5px 30px;
-      border: 2px solid #cb8670;
+      border: 2px solid #008035cc;
       background-color: rgba(0, 0, 0, 0.63); }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .breadcumb-area .bradcumbContent h2 {
@@ -1752,12 +1756,12 @@ img {
     position: relative;
     z-index: 1;
     width: 80%;
-    border: 2px solid #cb8670;
+    border: 2px solid #018a2abd;
     padding: 50px 40px 30px;
     left: 10%;
     text-align: center;
     margin-top: -145px;
-    background-color: #ffffff; }
+    background-color: #ffffff93; }
     @media only screen and (max-width: 767px) {
       .single-blog-post .post-content {
         width: 90%;
@@ -1775,7 +1779,7 @@ img {
       display: block;
       margin-bottom: 10px; }
       .single-blog-post .post-content .post-title:hover, .single-blog-post .post-content .post-title:focus {
-        color: #cb8670; }
+        color: #00801896; }
       @media only screen and (max-width: 767px) {
         .single-blog-post .post-content .post-title {
           font-size: 20px;
@@ -1786,7 +1790,7 @@ img {
       margin-bottom: 30px; }
       .single-blog-post .post-content .post-meta a {
         font-size: 12px;
-        color: #363636;
+        color: #000000;
         position: relative;
         z-index: 2; }
         .single-blog-post .post-content .post-meta a:first-child {
@@ -1851,7 +1855,7 @@ img {
       display: inline-block;
       margin-right: 15px; }
       .contact-area .contact-info .social-info a:hover, .contact-area .contact-info .social-info a:focus {
-        color: #cb8670; }
+        color: #028e09; }
 
 .single-contact-information {
   position: relative;
@@ -1874,7 +1878,7 @@ img {
       margin-bottom: 0; }
     .single-contact-information .contact-content p {
       font-size: 15px;
-      color: #7d7d7d;
+      color: #787777;
       margin-bottom: 0; }
     .single-contact-information .contact-content p:first-child {
       font-size: 18px;
@@ -1961,10 +1965,10 @@ img {
   position: relative;
   z-index: 1;
   padding: 50px 30px;
-  border: 2px solid #cb8670;
+  border: 2px solid #00831c;
   text-align: center; }
   .single-icon i {
-    color: #cb8670;
+    color: #00791e;
     font-size: 70px;
     display: block;
     margin-bottom: 30px; }
@@ -1977,7 +1981,7 @@ img {
   z-index: 1;
   width: 200px;
   padding: 35px 15px;
-  border: 2px solid #cb8670;
+  border: 2px solid #00911d;
   text-align: center;
   background-color: #363636;
   margin: 0 auto;
@@ -1989,11 +1993,11 @@ img {
     display: block;
     font-size: 70px;
     margin-bottom: 10px;
-    color: #cb8670; }
+    color: #009525; }
   .single-cool-fact .scf-text h2 {
     font-size: 48px;
     margin-bottom: 5px;
-    color: #ffffff; }
+    color: #007011; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .single-cool-fact .scf-text h2 {
         font-size: 48px; } }
@@ -2009,7 +2013,7 @@ img {
     color: #ffffff;
     line-height: 1; }
   .single-cool-fact:hover, .single-cool-fact:focus {
-    background-color: #cb8670; }
+    background-color: #ffffffa9; }
     .single-cool-fact:hover .scf-text i, .single-cool-fact:focus .scf-text i {
       color: #ffffff; }
 
@@ -2025,9 +2029,9 @@ img {
 .single-accordion h6 {
   margin-bottom: 0; }
   .single-accordion h6 a {
-    background-color: #cb8670;
+    background-color: #5f5f5fbb;
     border-radius: 0;
-    border: 2px solid #cb8670;
+    border: 2px solid #828282ad;
     color: #ffffff;
     display: block;
     margin: 0;
@@ -2055,7 +2059,7 @@ img {
       transition-duration: 500ms;
       background-color: #ffffff;
       color: #7d7d7d;
-      border: 2px solid #cb8670; }
+      border: 2px solid #5c5c5cbd; }
       .single-accordion h6 a.collapsed span {
         color: #7d7d7d; }
         .single-accordion h6 a.collapsed span.accor-close {
@@ -2078,11 +2082,11 @@ img {
     margin-bottom: 30px; }
     .palatin-tabs-content .nav-tabs .nav-link {
       background-color: #ffffff;
-      border: 2px solid #cb8670;
+      border: 2px solid #008325;
       padding: 0 20px;
       height: 58px;
       line-height: 58px;
-      color: #7d7d7d;
+      color: #000000;
       margin: 0 2px;
       border-radius: 0; }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -2097,7 +2101,7 @@ img {
         .palatin-tabs-content .nav-tabs .nav-link {
           padding: 0 15px; } }
       .palatin-tabs-content .nav-tabs .nav-link.active {
-        background-color: #cb8670;
+        background-color: #008a20;
         color: #ffffff; }
   .palatin-tabs-content .palatin-tab-text p {
     margin-bottom: 0; }

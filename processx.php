@@ -1,49 +1,73 @@
-<?php 
-$destino= "info@posadadelvientotandil.com";
-$nombre=$_POST['fname']; 
-$apellido=$_POST['lname']; 
-$ingreso=$_POST['ingreso']; 
-$egreso=$_POST['egreso']; 
-$adultos=$_POST['adultos'];
-$menores=$_POST['menores'];
-$email=$_POST['email']; 
-$phone=$_POST['phone'];
-$mensaje=$_POST['message']; 
-$contenido = "Nombre: ". $nombre ."\n 
-Apellido: ". $apellido ."\n
-Ingreso: ". $ingreso ." \n
-Egreso: ". $egreso ." \n
-Adultos: ". $adultos ." \n
-Menores: ". $menores ." \n
-Telefono: ". $phone." \n
-Email: ". $email."  \n 
-Mensaje: ". $mensaje."\n";   
+<?php
+require 'vendor/autoload.php';
 
-$headers = "From: $fname $apellido <$email>\n"; 
+// Incluye las dependencias de Google Cloud con Composer
+use Google\Cloud\RecaptchaEnterprise\V1\RecaptchaEnterpriseServiceClient;
+use Google\Cloud\RecaptchaEnterprise\V1\Event;
+use Google\Cloud\RecaptchaEnterprise\V1\Assessment;
+use Google\Cloud\RecaptchaEnterprise\V1\TokenProperties\InvalidReason;
 
-mail ($destino,"Consulta desde la web",$contenido, $headers);
+/**
+  * Crea una evaluación para analizar el riesgo de una acción de la IU.
+  * @param string $recaptchaKey La clave reCAPTCHA asociada con el sitio o la aplicación
+  * @param string $token El token generado obtenido del cliente.
+  * @param string $project El ID del proyecto de Google Cloud.
+  * @param string $action El nombre de la acción que corresponde al token.
+  */
+function create_assessment(
+  string $recaptchaKey,
+  string $token,
+  string $project,
+  string $action
+): void {
+  // Crea el cliente de reCAPTCHA.
+  // TODO: almacena en caché el código de generación de clientes (recomendado) o llama a client.close() antes de salir del método.
+  $client = new RecaptchaEnterpriseServiceClient();
+  $projectName = $client->projectName($project);
 
-header("Location:gracias.html");   
+  // Establece las propiedades del evento para realizar un seguimiento.
+  $event = (new Event())
+    ->setSiteKey($recaptchaKey)
+    ->setToken($token);
 
-if ($_POST['g-recaptcha-response'] == '') {
-echo "Captcha invalido";
-} else {
-$obj = new stdClass();
-$obj->secret = "6LdIgDUiAAAAALA75fb-7VUmZeoGWYg5OrqEs-3C";
-$obj->response = $_POST['g-recaptcha-response'];
-$obj->remoteip = $_SERVER['REMOTE_ADDR'];
-$url = 'https://www.google.com/recaptcha/api/siteverify';
-$options = array(
-'http' => array(
-'header' => "Content-type: application/x-www-form-urlencoded\r\n",
-'method' => 'POST',
-'content' => http_build_query($obj)
-)
+  // Crea la solicitud de evaluación.
+  $assessment = (new Assessment())
+    ->setEvent($event);
+
+  try {
+    $response = $client->createAssessment(
+      $projectName,
+      $assessment
+    );
+
+    // Verifica si el token es válido.
+    if ($response->getTokenProperties()->getValid() == false) {
+      printf('The CreateAssessment() call failed because the token was invalid for the following reason: ');
+      printf(InvalidReason::name($response->getTokenProperties()->getInvalidReason()));
+      return;
+    }
+
+    // Verifica si se ejecutó la acción esperada.
+    if ($response->getTokenProperties()->getAction() == $action) {
+      // Obtén la puntuación de riesgo y los motivos.
+      // Para obtener más información sobre cómo interpretar la evaluación, consulta:
+      // https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment
+      printf('The score for the protection action is:');
+      printf($response->getRiskAnalysis()->getScore());
+    } else {
+      printf('The action attribute in your reCAPTCHA tag does not match the action you are expecting to score');
+    }
+  } catch (exception $e) {
+    printf('CreateAssessment() call failed with the following error: ');
+    printf($e);
+  }
+}
+
+// PENDIENTE: Reemplaza el token y las variables de acción de reCAPTCHA antes de ejecutar la muestra.
+create_assessment(
+   '6LcuoS0qAAAAAL-1Afa4Zv4VGON2S7WmdlR-eYac',
+   'YOUR_USER_RESPONSE_TOKEN',
+   'my-project-1554420927372',
+   'YOUR_RECAPTCHA_ACTION'
 );
-$context = stream_context_create($options);
-$result = file_get_contents($url, false, $context);
-
-$validar = json_decode($result);
-
 ?>
-

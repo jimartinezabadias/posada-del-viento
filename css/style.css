@@ -1,11 +1,4 @@
-/******************************************************************
-  Template Name: Hotel Template
-  Description: Hotel HTML Template
-  Author: colorlib
-  Author URI: https://www.colorlib.com/
-  Version: 1.0
-  Created: colorlib
-******************************************************************/
+
 
 /*------------------------------------------------------------------
 [Table of contents]
@@ -50,7 +43,7 @@ h6 {
 	margin: 0;
 	color: #111111;
 	font-weight: 500;
-	font-family: "Taviraj", serif;
+	font-family: "Open Sans", sans-serif;
 }
 
 h1 {
@@ -79,7 +72,7 @@ h6 {
 
 p {
 	font-size: 16px;
-	color: #858585;
+	color: #222121;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	line-height: 28px;
