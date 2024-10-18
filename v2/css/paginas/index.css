@@ -1,0 +1,38 @@
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(../../images/suites_exterior_noche.jpg);
+    background-position: 0px 0px;
+    background-size: cover;
+    grid-column: span 2;
+    background-position-x: 40%;
+    
+    #text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 32px;
+    }
+}
+
+@media(min-width:768px) {
+    
+    #hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-image: url(../../images/suites_exterior_noche.jpg);
+        background-size: cover;
+        grid-column: span 2;
+        
+        #text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
