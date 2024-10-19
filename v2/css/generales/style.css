@@ -30,8 +30,8 @@ body {
     margin: 0;
     padding: 0;
     font-weight: 300;
-    color: var(--color-gray1);
-    background-color: var(--color-gray6);
+    color: var(--color-gray2);
+    background-color: var(--color-gray5);
     display: flex;
     flex-flow: column;
 }
@@ -60,7 +60,7 @@ button{
     height: fit-content;
     padding: 0;
     margin: 0;
-    color: var(--color-gray2);
+    color: var(--color-gray3);
     cursor: pointer;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -116,7 +116,13 @@ a {
     color: var(--color-gray6);
     font-size: 40px;
     letter-spacing: 1px;
-    line-height: 54px;
+    line-height: 64px;
+}
+
+.display-2 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    line-height: 56px;
 }
 
 .text-color-secondary {
@@ -137,6 +143,16 @@ ul{
 .link{
     color: var(--color-blue1);
     text-decoration: underline;
+}
+
+h1, h2, h3 {
+    color: var(--color-gray1);
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+    line-height: 22px;
 }
 
 /* .titulo-fav {

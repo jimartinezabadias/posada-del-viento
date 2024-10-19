@@ -8,6 +8,7 @@
     background-size: cover;
     grid-column: span 2;
     background-position-x: 40%;
+    color: var(--color-gray6);
     
     #text{
         display: flex;
@@ -15,6 +16,17 @@
         align-items: center;
         text-align: center;
         padding: 32px;
+        row-gap: 8px;
+    }
+}
+
+section#bienvenidos {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+
+    h3 {
+        margin-top: 16px;
     }
 }
 

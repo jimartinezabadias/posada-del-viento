@@ -16,14 +16,14 @@ section#navbar {
     #link-logo{
 
         #logo-navbar {
-            width: 256px;
-            margin-top: 4px;
+            width: 232px;
+            margin-top: 2px;
             margin-left: 16px;
         }
     }
 
     .navbar-icon{
-        width: 32px;
+        width: 28px;
     }
     
     #main-menu{
@@ -44,7 +44,7 @@ section#navbar {
         transition: transform 0.3s ease;
 
         #close-menu{
-            padding: 16px;
+            padding: 20px 16px;
         }
 
         #main-menu-options{
@@ -54,7 +54,7 @@ section#navbar {
         #main-menu-options{
             display: flex;
             flex-flow: column;
-            margin-top: 50px;
+            margin-top: 80px;
             margin-left: 48px;
             
             .link-seccion {
